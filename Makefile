@@ -6,5 +6,5 @@ fmt:
 
 .PHONY: lint
 lint:
-	opa check . --strict
+	opa check . --strict --ignore .regal
 	regal lint .
