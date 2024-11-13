@@ -1,0 +1,14 @@
+name: Lint
+on:
+  push:
+jobs:
+  regal:
+    name: Regal
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: StyraInc/setup-regal@v1
+        with:
+          version: v0.29.0
+      - name: Lint
+        run: regal lint . --format=github
