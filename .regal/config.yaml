@@ -1,0 +1,6 @@
+rules:
+  naming:
+    acme-corp-package:
+      ignore:
+        files:
+          - ".regal/**/*"
